@@ -1,4 +1,4 @@
-# Scheduling R to run from the command line
+# Scheduling R scripts to run from the command line
 Last year, I built an interactive visualization in Tableau that allows users to [create spray charts for every ball hit into play since 2010](https://public.tableau.com/profile/billpetti#!/vizhome/SprayChartComparison/SprayandStrikeZonePlot). Here's a sample of what can be generated:
 
 ![alt text](https://github.com/BillPetti/Spray-Chart-Tool/blob/master/images/Tableau_screenshot.png?raw=true)
