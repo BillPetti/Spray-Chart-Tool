@@ -11,7 +11,7 @@ Here's how to do it:
 
 Write your Rscript
 ------------------
-The first thing you need to do, obviously, is write and save the R code that you want to run. You can find my R script in this repository, so I won't go through the entire script here. However, I want to highlight a few things.
+The first thing you need to do, obviously, is write and save the R code that you want to run. You can find my R script in [this repository](https://github.com/BillPetti/Spray-Chart-Tool), so I won't go through the entire script here. However, I want to highlight a few things.
 
 First, and what I think is most important, you have to require the methods package at the very outset of your script.
 
@@ -32,7 +32,7 @@ con<-dbConnect(RMySQL::MySQL(), dbname="x", username = "xx", password = "xxx", h
 
 res<-dbGetQuery(con, "SELECT ... date BETWEEN (CURRENT_DATE() - INTERVAL 8 DAY) AND (CURRENT_DATE() - INTERVAL 1 DAY)")
 ```
-The actually query is pretty long, so I've truncated it here. You can read the entire query in the repository.
+The actually query is pretty long, so I've truncated it here. 
 
 After my SQL query runs, I reformat some columns of data, recode a bunch of variables (like batted ball type, etc.), and then I bind the new data and merge it with the existing data file:
 
