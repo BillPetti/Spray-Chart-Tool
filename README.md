@@ -24,6 +24,7 @@ Thanks to [this helpful commentator](http://stackoverflow.com/a/19468533/3987834
 I run a query that looks for any new batted ball data hit in the past seven days:
 
 ``` r
+require(methods)
 require(RMySQL)
 require(dplyr)
 
@@ -56,3 +57,12 @@ Using the Task Scheduler
 ------------------------
 Finally, we need to schedule the batch file to run. In my case, I wanted the data to update every Monday morning at 5:30 am.
 
+Open up the task scheduler and on the righthand side, click on Create Basic Task: 
+
+![alt text](https://github.com/BillPetti/Spray-Chart-Tool/blob/master/images/Task_Scheduler_1.JPG?raw=true)
+
+Give the task a name and quick description. Next, tell the scheduler at what interval you want to run the task. In this case, I run it weekly on Mondays at 5:30 am. 
+
+![alt text](https://github.com/BillPetti/Spray-Chart-Tool/blob/master/images/Task_Scheduler_2.JPG?raw=true)
+
+Next, tell it that you want to Start a Program and find the file path to your batch file. Click Finish and you are done!
