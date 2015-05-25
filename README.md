@@ -30,7 +30,7 @@ require(dplyr)
 
 con<-dbConnect(RMySQL::MySQL(), dbname="x", username = "xx", password = "xxx", host = "xxxx", port = 3306)
 
-res<-dbGetQuery(con, "SELECT ... date BETWEEN (CURRENT_DATE() - INTERVAL 8 DAY) AND (CURRENT_DATE() - INTERVAL 1 DAY)")
+res<-dbGetQuery(con, "SELECT ... date BETWEEN (CURRENT_DATE() - INTERVAL 7 DAY) AND (CURRENT_DATE() - INTERVAL 1 DAY)")
 ```
 The actually query is pretty long, so I've truncated it here. 
 
